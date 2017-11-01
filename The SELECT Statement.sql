@@ -1,5 +1,5 @@
 -- This is a single-line comment
-/* This is for a multi-line comments */
+/* This is for multi-line comments */
 
 -- "Hello world" in SQL
 
@@ -19,5 +19,5 @@ FROM  [SalesLT].[Product];
 SELECT ProductID, Name, Color, Size, Color + Size AS Style
 FROM SalesLT.Product
 
-/* NULL means is a non-known value, not a blank cell.
-The Color + Size is possible because both columns consist text values. */
+/* NULL means a non-known value, not a blank cell.
+The Color + Size is possible because both columns consist of text values. */
