@@ -2,7 +2,7 @@
 -- select all columns
 -- from the SalesLT.Customer table
 
-SELECT * FROM SalesLT.Customer
+SELECT * FROM SalesLT.Customer;
 
 -- Create List of Customer Contacts
 -- select the Title, FirstName, MiddleName, LastName and Suffix columns
