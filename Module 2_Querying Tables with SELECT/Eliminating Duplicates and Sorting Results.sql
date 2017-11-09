@@ -1,3 +1,20 @@
+/*
+	SELECT ALL - default behavior includes duplicates
+	SELECT DISTINCT - removes duplicates
+	ORDER BY - sort results by one or more columns
+
+	* aliases created in SELECT clause are visible to ORDER BY
+	* you can order by columns in the source that are not included in the SELECT clause
+	* you can specify ASC or DESC (ASC is the default)
+	
+	Example:
+
+	SELECT ProductCategory AS Category, ProductName
+	FROM Production.Product
+	ORDER BY Category, Price DESC;
+
+*/
+
 -- Display a list of product colors with the word 'None' if the value is null
 SELECT ISNULL (Color, 'None') AS Color 
 FROM SalesLT.Product;
