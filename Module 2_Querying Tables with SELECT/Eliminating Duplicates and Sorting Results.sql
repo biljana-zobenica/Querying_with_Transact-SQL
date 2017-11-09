@@ -17,3 +17,21 @@ SELECT DISTINCT ISNULL (Color, 'None') AS Color, ISNULL (Size, '-') AS Size
 FROM SalesLT.Product
 ORDER BY Color;
 
+-- Display the top 100 products by list price
+SELECT TOP 100 [Name], ListPrice 
+FROM SalesLT.Product 
+ORDER BY ListPrice DESC;
+
+-- Display the first ten products by product number
+SELECT [Name], ListPrice 
+FROM SalesLT.Product
+ORDER BY ProductNumber 
+OFFSET 0 ROWS FETCH NEXT 10 ROWS ONLY;
+
+-- Display the next ten products by product number
+SELECT [Name], ListPrice 
+FROM SalesLT.Product
+ORDER BY ProductNumber 
+OFFSET 10 ROWS FETCH FIRST 10 ROW ONLY;
+-- It is the same: rows = row and first = next
+
